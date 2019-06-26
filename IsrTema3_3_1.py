@@ -35,5 +35,5 @@ print (b)
 
 c = CurrencyBoard.getInstance()
 print (c)
-assert b == c # сверяем значения адресов переменных
+assert id(b) == id(c) # сверяем значения адресов переменных
 print(id(b), id(c))
